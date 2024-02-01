@@ -11,6 +11,11 @@ class LiveUpdate extends StatefulWidget {
 class _LiveUpdate extends State<LiveUpdate> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+          // title bar
+          title: const Text('Live Updates'),
+        ),
+    );
   }
 }
