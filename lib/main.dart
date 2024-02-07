@@ -44,7 +44,10 @@ class _RootPageState extends State<RootPage> {
         index: currentPage,
         children: const [
           HomePageContent(),
-          LiveUpdatePage(),
+          LiveUpdatePage(
+            phase: '',
+            street: '',
+          ),
           SchedulePage(),
           ForumPage(),
           ListPage(),
@@ -67,10 +70,6 @@ class _RootPageState extends State<RootPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.forum, color: Colors.black),
             label: 'Forums',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.list, color: Colors.black),
-            label: 'Employee List',
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -147,7 +146,7 @@ class HomePageContent extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          DateFormat('     EEEE').format(
+                          DateFormat('EEEE').format(
                               DateTime.now()), // displays the day of the week
                           style: const TextStyle(
                             fontSize: 20,
