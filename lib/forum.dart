@@ -22,7 +22,7 @@ class _ForumPageState extends State<ForumPage> {
           children: [
             TextField(
               controller: _postController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Enter your post',
                 border: OutlineInputBorder(),
               ),
