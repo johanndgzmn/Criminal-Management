@@ -73,7 +73,7 @@ class _RootPageState extends State<RootPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.more_horiz,
+              Icons.list,
               color: Colors.black,
             ),
             label: '',
